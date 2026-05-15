@@ -7,7 +7,7 @@ Une bibliothèque C légère, thread-safe et hautement optimisée pour les mémo
 ## 🚀 Fonctionnalités
 
 - **Support Dual Mode** : Bascule facile entre le mode standard SPI (1 ligne) et le mode haute vitesse Quad-SPI (4 lignes).
-- **Memory-Mapped Mode** : Configuration du mappage direct en mémoire permettant d'exécuter du code (XIP) ou de lire la Flash comme de la RAM interne (Région `0x90000000` ou `0x70000000`).
+- **Memory-Mapped Mode** : Configuration du mappage direct en mémoire permettant d'exécuter du code (XIP) ou de lire la Flash comme de la RAM interne (Région `0x90000000` ).
 - **Algorithme d'Usure Optimisé (`W25Q_UpdateLive`)** : Inspecte le contenu physique avant écriture. Évite un cycle complet d'effacement (*Erase*) si les bits passent uniquement de 1 à 0, multipliant la durée de vie de la puce.
 - **Sécurisation d'état** : Protection automatique de la machine d'état de l'OctoSPI lors des transitions entre le mode indirect et le mode mappé.
 
